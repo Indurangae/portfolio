@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+@font-face {
+  font-family: ufont;
+  src: url(Formula1-Regular.ttf);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;                                      /* animation */
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.backimg {
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*nav Bar*/
+.logo{
+  color: #ea1538;
+  font-size: 33px;
+  border-style: solid;
+  border-radius: 7px;
+}
+
+.wrapperow1{
+  background-color: rgba(0,0,0,0.3);
+}
+
+nav{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover{     /* User action pseudo class*/
+  color: orange;
+  transition: .3s;
+}
+
+/*Main page*/
+.main{
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+h1 {
+  font-family: ufont;
+  text-align: center;
+  color: orange;
+  line-height: 130%;
+  font-size: 35px;
+  animation: fadeIn 2s; 
+}
+
+.profilepic{
+  width: 300px;
+  height: 400px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: rgb(69, 3, 177);
+}
+
+.social1{
+  font-family:Andale Mono, monospace;
+  font-size: 25px;
+  color: aliceblue;
+  animation: fadeIn 4s;      /*animation */
+}
+ul {
+  list-style-type: none;
+}
+
+/* Social media icons */
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {  
+  background: #007bb5;  
+  color: white;  
+}  
+.fa-instagram {  
+  background-image: linear-gradient(to right, rgb(248, 227, 0), rgb(216, 5, 139));
+  color: white;  
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;  
+} 
+
+/*blog page*/
+.blog > h2{                          /* Child combinator */
+  font-family:Georgia, serif;
+  text-align: center;
+  color: orange;
+  line-height: 130%;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.B_container{
+  font-family: system-ui;
+  font-size: 20px;
+  color: white;
+  width: 1000px;
+  padding-left: 12%;
+  padding-right: 10%;
+}
+.B_container1{
+  display: flex;
+  margin: 50px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 25px;
+  justify-content: center;
+  border-style: solid;
+  border-color:black ;
+  transition: transform .2s;
+}
+.B_container1:hover {
+  transform: scale(1.1);
+}
+article{
+  padding-top: 30px;
+  text-align: justify;
+  padding-left: 3%;
+  padding-right: 3%;
+  word-wrap: break-word;   /* Text effect*/
+}
+article::first-letter {   /* Pseudo elements*/
+  font-size: xx-large;
+}
+.img1 {
+  width: 300px;
+  height: 380px;
+  border-radius: 25px;
+}
+.img2 {
+  width: 300px;
+  height: 350px;
+  border-radius: 25px;
+}
+.img3 {
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+/*About page*/
+
+.A_container{
+  display: flex;
+  margin: 50px;
+  font-family: system-ui;
+  font-size: 20px;
+  color: white;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.about_img {
+  width: 300px;
+  height: 380px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color:rgb(69, 3, 177);
+}
+.A_container1 {
+  width: 30%;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: white;
+}
+.A_container2{
+  justify-content: center;
+  padding-left: 5%;
+}
+.A_container3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+}
+h2 {
+  font-family:Georgia, serif;
+  text-align: center;
+  color: orange;
+  line-height: 130%;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px #000000;
+}
+p :not(b) {                                               /*Negation pseudo class  */
+  font-family: 'Courier New', Courier, monospace;
+}
+.social2{
+  font-family:Andale Mono, monospace;
+  font-size: 25px;
+  color: aliceblue;
+}
+.socialbtn {
+  transition: transform 0.5s;
+}
+.socialbtn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+b:nth-child(2n){               /* Nth pseudo class  */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/*Form*/
+.form{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: white;
+  justify-items: center;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.form_b{
+  padding-left: 30%;
+}
+.form h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.form .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+input:invalid {                          /* Validity pseudo class */
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 3%;
+}
+.input-box input::palceholder {           /* Structural selectors */
+  color: white;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.form .remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.remember-forgot [type="checkbox"] {     /* Attribute selectors */
+  accent-color: white;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: white;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+.form [type="submit"] {          /* Attribute selectors */
+  width: 100%;
+  height: 45px;
+  background: white;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.form .btn:hover{
+  background: orange;
+  transition: .3s;
+}
+.form .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.register-link p a {
+  color: white;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*footer*/
+
+footer {                  
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 57%;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .section1, .section2, .section3 {
+    width: 50%;
+    height: 320px;
+  }
+ }
+
+ @media only screen and (min-width: 769px) {
+  .section1, .section2, .section3 {
+    width: 33.3%;
+    height: 350px;
+  }
+ }
+
+/*  media queries. */
+
+@media screen and (max-width: 600px)
+{
+  h1{
+    font-size: 15px;
+  }
+  .profilepic{
+    width: 120px;
+    height: 180px;
+  }
+  .social1{
+    font-size: 10px;
+       
+  }
+  .fa {
+    font-size: 8px;
+    width: 8px;
+    padding: 6px;
+  } 
+  .blog > h2{
+    font-size: 18px;
+  }
+  .B_container{
+    font-size: 10px;
+    width: 300px;
+  } 
+  .img1 {
+    width: 120px;
+    height: 180px;
+  }
+  .img2 {
+    width: 120px;
+    height: 180px;
+  }
+  .img3 {
+    width: 120px;
+    height: 80px;
+  }
+  .form{
+    width: 200px;
+    padding: 15px 10px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .about_img {
+    width: 150px;
+    height: 180px;
+  }
+  .A_container2{
+    font-size: 17px;
+  }
+  .social2{
+    font-size: 10px;
+    padding-left: 1px;
+  }
+  .A_container1 {
+    font-size: 10px;
+    padding-right: 1px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  
+
+
+}
+@media screen and (max-width: 900px) and (min-width: 600px)
+{
+  h1{
+    font-size: 25px;
+  }
+  .profilepic{
+    width: 185px;
+    height: 250px;
+  }
+  .social1{
+    font-size: 20px;
+       
+  }
+  .fa {
+    font-size: 13px;
+    width: 13px;
+    padding: 10px;
+  } 
+  .blog > h2{
+    font-size: 25px;
+  }
+  .B_container{
+    font-size: 18px;
+    width: 600px;
+  } 
+  .img1 {
+    width: 190px;
+    height: 250px;
+  }
+  .img2 {
+    width: 190px;
+    height: 250px;
+  }
+  .img3 {
+    width: 190px;
+    height: 120px;
+  }
+  .form{
+    width: 350px;
+    padding: 15px 18px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .about_img {
+    width: 230px;
+    height: 280px;
+  }
+  .A_container2{
+    font-size: 19px;
+  }
+  .social2{
+    font-size: 18px;
+    padding-left: 1px;
+  }
+  .A_container1 {
+    font-size: 15px;
+    padding-right: 1px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}
